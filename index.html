@@ -7,30 +7,9 @@
         <link rel="stylesheet" type="text/css" href="main.css">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-
         <title>randomQuoteMachine</title>
-        
         <script src="quotes.js"></script>
-        <script>
-         window.onload = init;
-         function init() {
-             getQuote()
-         }
-
-         function getQuote(){
-             let randomIndex = Math.floor(Math.random() * QUOTES.length);
-             let randomQuote = QUOTES[randomIndex];
-             
-             document.getElementById("text").innerText = randomQuote.quote;
-             document.getElementById("author").innerText = "- " + randomQuote.author;
-               const twitter = document.querySelector('#tweet-quote')
-  twitter.setAttribute(
-             'href',
-             'https://twitter.com/intent/tweet?text=' +
-             encodeURIComponent('"' + randomQuote.quote + '" ' + '- ' + randomQuote.author)
-         )
-         }
-        </script>
+        <script src="randomQuote.js"></script>
     </head>
     <body style="background-color: black; margin: auto">
         <wrapper id="quote-box">
