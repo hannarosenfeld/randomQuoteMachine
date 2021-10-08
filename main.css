@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Explora&display=swap');
+body {
+    background-color: #000000;
+    max-width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://www.metmuseum.org/-/media/images/blogs/now-at-the-met/2020/2020_02/alchemy-and-magic/thealchemist_1520x1034.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#quote-box {
+    width: 800px;
+    padding: 2em;
+    position: relative;
+    background-color: rgba(300, 300, 300, 0.61);
+}
+
+#text {
+    font-size: 2rem;
+    text-shadow: 2px 2px #FFE38C;
+}
+
+#author {
+    font-size: 1.8rem;
+    text-align: right;
+    text-shadow: 0px 1px #FFE38C;
+    margin: 0.5em 1em 0 0;
+}
+
+#text, #author {
+    font-family: 'EB Garamond', serif;
+}
+
+#controls {
+    padding-top: 3em;
+    margin: auto;
+    display: block;
+}
+
+#new-quote {
+    float: right;
+    padding: auto;
+
+}
+
+#new-quote img {
+    margin-right: 1em;
+    width: 3.3rem;
+    float: right;
+    border-radius: 50%;
+}
+
+#tweet-quote img {
+    margin-left: 1em;
+    width: 3.3rem;
+    border-radius: 50%;
+}
+
+
+#tweet-quote {
+    float: left;
+}
